@@ -1,11 +1,14 @@
-public class Main {
-	public static void main(String[] args) {
-		Plane2D[] a= {
-				new Rectangle(2,5),
-				new Parallels(2,5),
-		};
-		
-		for(int i =0; i<a.length; i++)
-			System.out.println("a["+i+"]의 면적="+a[i].getArea());
-	}
+class Main {
+  public static void main(String[] args) {
+
+    wearble[] a= new wearble[2];
+    a[0] =new headphone();
+    a[1]=new WearableComputer();
+
+    for(int i = 0; i<a.length; i++)
+    a[i].putOn();
+    for(int i = 0; i<a.length; i++)
+    a[i].putOff();
+    System.out.println("Hello world!");
+  }
 }

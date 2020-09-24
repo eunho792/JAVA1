@@ -1,18 +1,11 @@
-class Main {
-  public static void main(String[] args) {
-   
-    Human gildong = new Human("홍길동",170,60);
-    Human chulsu = new Human("김철수", 166,72);
-
-    gildong.putData();
-    System.out.println("번호 : " + gildong.getId());
-
-    System.out.println();
-
-    chulsu.putData();
-    System.out.println("번호 : " + chulsu.getId());
-
-  
-  
-  }
+public class Main {
+	public static void main(String[] args) {
+		Plane2D[] a= {
+				new Rectangle(2,5),
+				new Parallels(2,5),
+		};
+		
+		for(int i =0; i<a.length; i++)
+			System.out.println("a["+i+"]의 면적="+a[i].getArea());
+	}
 }
